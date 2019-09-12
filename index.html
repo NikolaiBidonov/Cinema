@@ -1,26 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <title>Кино в Иннополисе</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Webpack Boilerplate</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" type="text/css" href="build/style.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/icons.css">
 </head>
 
 <body>
     <header style="background: chocolate">
+        <a href="http://university.innopolis.ru/" title="Сайт Иннополис" target="_blank"><img alt="Логотип"
+        src='images/logo.png'></a>
         <nav>
-            <a href="http://university.innopolis.ru/" title="Сайт Иннополис" target="_blank"><img alt="Логотип"
-                    src='images/logo.png'></a>
-            <a href="#" title="Заказать билет">Заказать билет</a>
-            <a href="#" title="Преимущества">Преимущества</a>
-            <a href="#" title="Фильмы">Фильмы</a>
-            <a href="#" title="Контакты">Контакты</a>
+            <ul>
+                <li><a href="#order" title="Заказать билет">Заказать билет</a></li>
+                <li><a href="#advantages" title="Преимущества">Преимущества</a></li>
+                <li><a href="#films" title="Фильмы">Фильмы</a></li>
+                <li><a href="#contacts" title="Контакты">Контакты</a></li>
+            </ul>
             Ваш город: <u>Москва</u>
         </nav>
     </header>
@@ -42,7 +42,7 @@
                 Facere minima optio perferendis quibusdam quis reprehenderit, saepe!<br>
                 Debitis enim optio saepe voluptatibus.</p>
         </div>
-        <h2>Почему мы?</h2>
+        <h2 id="advantages">Почему мы?</h2>
 
         <section>
             <div>
@@ -71,55 +71,57 @@
             </div>
         </section>
 
-        <div>
-            <b>Выберите фильм</b>
-            <table border="1">
-                <thead>
-                    <tr>
-                    <th>Начало сеанса</th>
-                    <th>Название фильма</th>
-                    <th>Жанр</th>
-                    </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>10:00</td>
-                    <td><a href="https://www.kinopoisk.ru/film/838/" title="Кинопоиск" target="_blank">Человек-паук</a>
-                    </td>
-                    <td>фантастика, боевик, приключения</td>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td><a href="https://www.kinopoisk.ru/film/1122114/" title="Кинопоиск" target="_blank">Собачья жизнь
-                            2</a></td>
-                    <td>фэнтези, драма, комедия</td>
-                </tr>
-                <tr>
-                    <td>14:00</td>
-                    <td><a href="https://www.kinopoisk.ru/film/846824/" title="Кинопоиск" target="_blank">История
-                            игрушек 4</a></td>
-                    <td>мультфильм, фэнтези, комедия</td>
-                </tr>
-                <tr>
-                    <td>16:00</td>
-                    <td><a href="https://www.kinopoisk.ru/film/693730/" title="Кинопоиск" target="_blank">Люди в черном:
-                            Интернэшнл</a></td>
-                    <td>фантастика, боевик, комедия</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati
-                    quam rem repellendus veritatis. Aliquam beatae,<br> delectus dignissimos enim
-                    exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!
-                    </td>
-                </tr>
-            </tfoot>    
-            </table>
-        </div>
+        <section>
+            <div class="movie-list">
+                <h2 id="order" class="movie-list__header">Выберите фильм</h2>
+                <div class="container">
+                    <table class="movie-list__table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Stuff that will happen</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10am - 12pm</td>
+                                <td><a href="https://www.kinopoisk.ru/film/838/" title="Кинопоиск"
+                                        target="_blank">Человек-паук</a>
+                                </td>
+                                <td>фантастика, боевик, приключения</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>12:00</td>
+                                <td><a href="https://www.kinopoisk.ru/film/1122114/" title="Кинопоиск"
+                                        target="_blank">Собачья жизнь
+                                        2</a></td>
+                                <td>фэнтези, драма, комедия</td>
+                            </tr>
+                            <tr>
+                                <td>14:00</td>
+                                <td><a href="https://www.kinopoisk.ru/film/846824/" title="Кинопоиск"
+                                        target="_blank">История
+                                        игрушек 4</a></td>
+                                <td>мультфильм, фэнтези, комедия</td>
+                            </tr>
+                            <tr>
+                                <td>16:00</td>
+                                <td><a href="https://www.kinopoisk.ru/film/693730/" title="Кинопоиск"
+                                        target="_blank">Люди в
+                                        черном:
+                                        Интернэшнл</a></td>
+                                <td>фантастика, боевик, комедия</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
         <div>
-            <img src="images/b4_img.jpg" alt="Подарок">
+            <img src="images/podarok.png" alt="Подарок">
             <br>
             <b>Подарок каждому!</b>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur,
@@ -144,7 +146,7 @@
                 Ad ea esse ex inventore repudiandae, suscipit!</p>
         </div>
 
-        <section>
+        <section id="films">
             <div>
                 <img src="images/mov1.jpg" alt="Человек-паук" title="Человек-паук">
                 <b>Человек-паук</b>
@@ -178,7 +180,7 @@
 
     </main>
 
-    <footer>
+    <footer id="contacts">
         <img width="1100" src="https://via.placeholder.com/1920x450?text=Map-1920x450" alt="Карта" title="Карта">
         <a href="twitter.com" title="twitter.com" target="_blank">twitter</a>
         <a href="fb.com" title="facebook.com" target="_blank">facebook</a>
@@ -194,11 +196,11 @@
         </div>
 
         <div>
-            <input type="text" name="client_email" placeholder="Ваш e-mail" required>
+            <input type="email" name="client_email" placeholder="Ваш e-mail" required>
         </div>
 
         <div>
-            <select name="" id="" required>
+            <select aria-label="Выберите место" name="" id="" required>
                 <option value="">Выберите место</option>
                 <option value="">Место 1</option>
                 <option value="">Место 2</option>
@@ -224,7 +226,7 @@
         </div>
 
         <div>
-            <textarea placeholder="Ваш комментарий"></textarea>
+            <textarea placeholder="Ваш комментарий" area-label="Введите комментарий"></textarea>
         </div>
 
         <div>
@@ -239,24 +241,6 @@
         <button type="submit">Заказать</button>
     </form>
 
-    <ul>
-        <li>Люди в черном</li>
-        <li>Человек-паук</li>
-        <li>Собачья жизнь 2</li>
-        <li>История игрушек</li>
-    </ul>
-
-    <ol>
-        <li>Люди в черном</li>
-        <li>Человек-паук</li>
-        <li>История игрушек</li>
-    </ol>
-
-    <ol type="I">
-        <li>Люди в черном</li>
-        <li>Человек-паук</li>
-        <li>История игрушек</li>
-        </ol>
 </body>
 
 </html>
