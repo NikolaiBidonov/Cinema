@@ -45,12 +45,69 @@ p, h1, h2, h3, h4, h5, h6, body, div {
     overflow: hidden;
 }
 
-.movie-list__table th{
+.movie-list__rowEven {
+    background: #6c6c6c;
+    font-size: 22px;
+}
+
+.movie-list__rowOdd {
+    font-size: 22px;
+    background: #252525;
+}
+
+.movie-list__head1 {
     font-size: 30px;
     font-weight: 700;
     color: #fff;
     background: #a3cc40;
-    padding: 21px 64px;
+    padding: 23px 71px 21px 56px;
+}
+
+.movie-list__head2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    background: #a3cc40;
+    padding: 20px 254px 17px 10px;
+}
+
+.movie-list__head3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    background: #a3cc40;
+}
+
+.movie-list__col1 {
+    padding: 17px 42px 19px 46px;
+    color: #fff;
+}
+
+.movie-list__col2 {
+    padding: 18px 23px 20px 55px;
+    color: #fff;
+    word-spacing: 1px;
+}
+
+.movie-list__col3 {
+    padding: 20px 47px 17px;
+    color: #fff;
+    text-align: right;
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
   
