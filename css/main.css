@@ -9,16 +9,37 @@ p, h1, h2, h3, h4, h5, h6, body, div {
     font-family: 'Roboto', sans-serif;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Roboto';
     src: url(../fonts/Roboto-Regular.ttf) format('truetype');
     font-weight: 400;
 }
-
-@font-face {
+*/
+/*@font-face {
     font-family: 'Roboto';
     src: url(../fonts/Roboto-Bold.ttf) format('truetype');
     font-weight: 700;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
+
+.triangle-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 7px 0 7px;
+    border-color: #fff transparent transparent transparent;
+}
+
+.triangle-up {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 14px 7px;
+    border-color: transparent transparent #fff transparent;
 }
 
 .movie-list {
@@ -29,7 +50,7 @@ p, h1, h2, h3, h4, h5, h6, body, div {
     font-size: 50px;
     color: #252525;
     font-weight: 700;
-    margin: 0 0 76px;
+    margin: 0 0 60px;
     text-align: center;
 }
 
@@ -40,64 +61,73 @@ p, h1, h2, h3, h4, h5, h6, body, div {
 
 .movie-list__table {
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
     border-radius: 15px;
     overflow: hidden;
 }
 
-.movie-list__rowEven {
-    background: #6c6c6c;
-    font-size: 22px;
-}
-
-.movie-list__rowOdd {
-    font-size: 22px;
-    background: #252525;
-}
 
 .movie-list__head1 {
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-    background: #a3cc40;
-    padding: 23px 71px 21px 56px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .movie-list__head2 {
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-    background: #a3cc40;
-    padding: 20px 254px 17px 10px;
+    text-align: left;
+    vertical-align: middle;
 }
 
 .movie-list__head3 {
-    font-size: 30px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.col1 {
+    padding: 5px 5px 5px 84px;
+    text-align: center;
+}
+
+.col2 {
+    padding: 5px 21px 5px;
+}
+
+.col3 {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.movie-list tr {
+    background: #252525;
+    font-size: 18px;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.movie-list tr:nth-child(2) {
+    background: #4b4d4f;
+    font-size: 18px;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.movie-list tr:nth-child(3) {
+    background: #6c6c6c;
+    font-size: 18px;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.movie-list th {
+    font-size: 22px;
     font-weight: 700;
     color: #fff;
     background: #a3cc40;
-}
-
-.movie-list__col1 {
-    padding: 17px 42px 19px 46px;
-    color: #fff;
-}
-
-.movie-list__col2 {
-    padding: 18px 23px 20px 55px;
-    color: #fff;
-    word-spacing: 1px;
-}
-
-.movie-list__col3 {
-    padding: 20px 47px 17px;
-    color: #fff;
-    text-align: right;
+    padding: 15px 0;
 }
 
 a {
     color: #fff;
-    text-transform: uppercase;
     text-decoration: none;
 }
 
