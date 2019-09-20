@@ -9,20 +9,7 @@ p, h1, h2, h3, h4, h5, h6, body, div {
     font-family: 'Roboto', sans-serif;
 }
 
-/*@font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
-    font-weight: 400;
-}
-*/
-/*@font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
-    font-weight: 700;
-}
-*/
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400,400i,700,700i&display=swap&subset=cyrillic');
 
 .triangle-down {
     display: inline-block;
@@ -84,17 +71,20 @@ p, h1, h2, h3, h4, h5, h6, body, div {
 }
 
 .col1 {
-    padding: 5px 5px 5px 84px;
+    padding: 13px 34px 13px 81px;
     text-align: center;
+    vertical-align: top;
 }
 
 .col2 {
-    padding: 5px 21px 5px;
+    padding: 13px 0;
+    vertical-align: top;
 }
 
 .col3 {
     padding: 5px 0;
     text-align: center;
+    vertical-align: top;
 }
 
 .movie-list tr {
@@ -126,9 +116,34 @@ p, h1, h2, h3, h4, h5, h6, body, div {
     padding: 15px 0;
 }
 
+.change-color:hover {
+    color: #609e29;
+}
+
+.navigation {
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main-block {
+    background-image: url(../images/top_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
 a {
     color: #fff;
     text-decoration: none;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    font-weight: 100;
+    color: #fff;
 }
 
 ul {
