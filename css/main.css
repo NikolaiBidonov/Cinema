@@ -169,11 +169,12 @@ li {
     padding-top: 268px;
     text-align: center;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .advantage {
-    float: left;
-    width: 33.33%;
+    flex-basis: 33.33%;
     margin-bottom: 10px;
 }
 
