@@ -11,6 +11,11 @@ p, h1, h2, h3, h4, h5, h6, body, div {
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400,400i,700,700i&display=swap&subset=cyrillic');
 
+body {
+    overflow-x: hidden;
+}
+
+
 a {
     color: #fff;
     text-decoration: none;
@@ -38,15 +43,21 @@ li {
     margin: 0 0 0 10px;
 }
 
+li:hover {
+    border-bottom: 1px solid #609e29;
+    transition: .2s;
+}
+
 .container {
     width: 1030px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
 .change-color:hover {
     color: #609e29;
-    text-decoration: underline;
+    
 }
 
 .first-screen__background {
@@ -54,8 +65,10 @@ li {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    height: 760px;
+    
     position: relative;
+    padding-top: 50px;
+    padding-bottom: 353px;
 }
 
 .first-screen__background::after {
@@ -71,19 +84,20 @@ li {
 }
 
 .first-screen__logo {
-    padding-top: 50px;
+    
     float: left;
     width: 25%;
 }
 
 .first-screen__menu {
-    padding-top: 50px;
+    
     float: left;
     width: 50%;
+    margin-bottom: 154px;
 }
 
 .first-screen__city {
-    padding-top: 64px;
+    padding-top: 13px;
     float: left;
     text-align: right;
     width: 18%;
@@ -105,14 +119,16 @@ li {
     font-size: 15px;
     font-weight: 100;
     text-transform: uppercase;
+    
 }
 
 .first-screen__main-row1 {
-    padding-top: 250px;
+    
     font-size: 80px;
     text-align: center;
     font-weight: 100;
     color: #fff;
+    clear: both;
 }
 
 .first-screen__main-row2 {
@@ -424,7 +440,7 @@ li {
     height: 113px;
     width: 102%;
     background: #fff;
-    transform: rotate(-5deg);
+    transform: rotate(-4deg);
     bottom: -50px;
     left: 0;
     position: absolute;
@@ -485,17 +501,20 @@ li {
     font-size: 14px;
     width: 300;
     color: #252525;
-    padding: 35px 0 78px 29px;
+    padding: 35px 0 29px;
+    margin-bottom: 40px
 }
 
-.films-grid__flex {
-    display: flex;
-    flex-wrap: wrap;
+.films-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 21px;
+    grid-row-gap: 17px;
+    padding: 0 22px
 }
 
 .films-grid__item {
-    padding: 2px 9px 35px 31px;
-    
+   padding: 10px;
 }
 
 .films-grid__inner {
@@ -559,6 +578,16 @@ li {
 
 .links {
    padding-top: 57px;
+}
+
+.shadow {
+    box-shadow: 1px 1px 2px -2px #000;
+    border-radius: 100%;
+}
+
+.shadow:hover {
+    box-shadow: none;
+    transition: .2s;
 }
 
 .footer-link {
