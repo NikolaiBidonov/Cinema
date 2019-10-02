@@ -537,6 +537,9 @@ li:hover {
     overflow: hidden;
 }
 
+.films-grid__poster {
+    height: 14.74rem;
+}
 
 .films-grid__poster img {
     width: 14.75rem;
@@ -608,6 +611,11 @@ li:hover {
 
 .footer-link svg {
     width: 2.3rem;
+    filter: url(#Filter_1);
+}
+
+.footer-link svg:hover {
+    filter: url(#Filter_2);
 }
 
 .footer-text {
