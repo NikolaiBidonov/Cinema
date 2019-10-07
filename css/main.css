@@ -1,3 +1,4 @@
+/* Reset CSS */
 p, h1, h2, h3, h4, h5, h6, body, div {
     background: transparent;
     border: 0;
@@ -9,7 +10,15 @@ p, h1, h2, h3, h4, h5, h6, body, div {
     font-family: 'Roboto', sans-serif;
 }
 
+/* \Reset CSS */
+
+/* Шрифт */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400,400i,700,700i&display=swap&subset=cyrillic');
+
+/* \Шрифт */
+
+/* Общие стили */
 
 body {
     overflow-x: hidden;
@@ -55,11 +64,18 @@ li:hover {
 }
 
 .container {
-    width: 51.5rem;
+    max-width: 51.5rem;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
+.simple-text {
+    font-size: .7rem;
+}
+
+/* \Общие стили */
+
+/* Первый экран */
 
 .change-color:hover {
     color: #609e29;
@@ -144,6 +160,10 @@ li:hover {
     text-align: center;
 }
 
+/* \Первый экран */
+
+/* Второй экран */
+
 .second-screen {
     position: relative;
 }
@@ -165,16 +185,14 @@ li:hover {
     font-weight: 900;
 }
 
-.welcome__text {
-    font-size: .7rem;
+.welcome__text {   
     font-weight: 300;
     color: #252525;
     margin-top: 1.35rem;
     line-height: 1.2; 
 }
 
-.welcome__text2 {
-    font-size: .7rem;
+.welcome__text2 { 
     font-weight: 300;
     color: #252525;
     margin-top: .85rem;
@@ -261,7 +279,6 @@ li:hover {
 }
 
 .advantage-text1 {
-    font-size: .7rem;
     font-weight: 300;
     padding: .7rem 2.3rem 0rem 0rem;
     color: #252525;
@@ -271,7 +288,6 @@ li:hover {
 }
 
 .advantage-text2 {
-    font-size: .7rem;
     font-weight: 300;
     padding-top: .7rem;
     color: #252525;
@@ -281,7 +297,6 @@ li:hover {
 }
 
 .advantage-text3 {
-    font-size: .7rem;
     font-weight: 300;
     padding: .7rem 0rem 0rem 2.6rem;
     color: #252525;
@@ -289,6 +304,10 @@ li:hover {
     text-align: center;
 
 }
+
+/* \Второй экран */
+
+/* Таблица */
 
 .movie-list {
     padding: 5.5rem 0 7.55rem;
@@ -411,13 +430,15 @@ li:hover {
 }
 
 .movie-list__text {
-    font-size: .7rem;
     color: #252525;
     font-weight: 300;
     text-align: center;
     padding-top: 2.1rem;
 }
 
+/* \Таблица */
+
+/* Блок подарок */
 
 .present-block__background {
     background-image: url(../images/b4_bg.jpg);
@@ -430,26 +451,20 @@ li:hover {
 
 .present-block__background::before {
     content: "";
-    height: 6.9rem;
-    width: 102%;
-    background: #fff;
-    transform: rotate(-5deg);
-    top: -4rem;
-    left: 0;
     position: absolute;
-    overflow: hidden;
+    top: 0;
+    left: 0;
+    border-right: 100vw solid transparent;
+    border-top: 6.2rem solid #fff;
 }
 
 .present-block__background::after {
     content: "";
-    height: 5.65rem;
-    width: 102%;
-    background: #fff;
-    transform: rotate(-4deg);
-    bottom: -2.5rem;
-    left: 0;
     position: absolute;
-    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 6rem solid #fff;
 }
 
 .present-block__head {
@@ -473,16 +488,16 @@ li:hover {
 
 .present-block__text {
     clear: both;
-    padding-top: 2.7rem;
-}
-
-.present-block p {
-    font-size: .7rem;
+    padding-top: 2rem;
     font-weight: 300;
     color: #fff;
     text-align: right;
     margin-bottom: .9rem;
-    padding-right: .15rem;
+    padding-right: .15rem;;
+}
+
+.present-block__text p {
+    padding-top: 0.9rem;
 }
 
 .present-block__button {
@@ -499,6 +514,10 @@ li:hover {
     border: 0;
 }
 
+/* \Блок подарок */
+
+/* Сетка с фильмами */
+
 .films-grid__head {
     font-size: 2.5rem;
     width: 700;
@@ -507,7 +526,6 @@ li:hover {
 }
 
 .films-grid__text {
-    font-size: .7rem;
     width: 300;
     color: #252525;
     padding: 2rem 1.6rem;
@@ -543,7 +561,7 @@ li:hover {
 
 .films-grid__poster img {
     width: 14.75rem;
-}
+} 
 
 .films-grid__description {
     position: absolute;
@@ -585,11 +603,22 @@ li:hover {
     color: #fff;
     font-weight: 300;
     flex: 1;
+    
 }
+.films-grid__item:nth-last-child(1) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+/* \Сетка с фильмами */
 
+/* Карта */
 .map {
     margin-top: 3.2rem;
 }
+
+/* \Карта */
+
+/* Подвал */
 
 .footer {
     background: #90d23d;
@@ -624,3 +653,5 @@ li:hover {
     font-weight: 300;
     padding: 1.25rem;
 }
+
+/* \Подвал */
