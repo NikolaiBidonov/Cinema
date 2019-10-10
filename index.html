@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -149,10 +151,10 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="col1">10:00</td>
-                                    <td class="col2"><a href="https://www.kinopoisk.ru/film/chelovek-pauk-2002-838/"
-                                            title="Кинопоиск" target="_blank">Человек-паук</a></td>
-                                    <td class="col3"></td>
+                                    <td id="start_film_1" class="col1"></td>
+                                    <td  class="col2"><a id="name_film_1" href="https://www.kinopoisk.ru/film/chelovek-pauk-2002-838/"
+                                            title="Кинопоиск" target="_blank"></a></td>
+                                    <td id="genre_film_1" class="col3"></td>
                                     <td class="col4"><svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 33 33">
                                             <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
@@ -161,10 +163,10 @@
                                 </tr>
 
                                 <tr>
-                                    <td class="col1">12:00</td>
-                                    <td class="col2"><a href="https://www.kinopoisk.ru/film/1122114/" title="Кинопоиск"
-                                            target="_blank">Собачья жизнь 2</a></td>
-                                    <td class="col3"></td>
+                                    <td id="start_film_2" class="col1"></td>
+                                    <td  class="col2"><a id="name_film_2" href="https://www.kinopoisk.ru/film/1122114/" title="Кинопоиск"
+                                            target="_blank"></a></td>
+                                    <td id="genre_film_2" class="col3"></td>
                                     <td class="col4"><svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 33 33">
                                             <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
@@ -172,10 +174,10 @@
                                         </svg></td>
                                 </tr>
                                 <tr>
-                                    <td class="col1">14:00</td>
-                                    <td class="col2"><a href="https://www.kinopoisk.ru/film/846824/" title="Кинопоиск"
-                                            target="_blank">История игрушек 4</a></td>
-                                    <td class="col3"></td>
+                                    <td id="start_film_3" class="col1"></td>
+                                    <td class="col2"><a id="name_film_3" href="https://www.kinopoisk.ru/film/846824/" title="Кинопоиск"
+                                            target="_blank"></a></td>
+                                    <td id="genre_film_3"class="col3"></td>
                                     <td class="col4"><svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 33 33">
                                             <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
@@ -183,10 +185,10 @@
                                         </svg></td>
                                 </tr>
                                 <tr>
-                                    <td class="col1">16:00</td>
-                                    <td class="col2"><a href="https://www.kinopoisk.ru/film/693730/" title="Кинопоиск"
-                                            target="_blank">Люди в черном: Интернэшнл</a></td>
-                                    <td class="col3"></td>
+                                    <td id="start_film_4" class="col1"></td>
+                                    <td  class="col2"><a id="name_film_4" href="https://www.kinopoisk.ru/film/693730/" title="Кинопоиск"
+                                            target="_blank"></a></td>
+                                    <td id="genre_film_4" class="col3"></td>
                                     <td class="col4"><svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 33 33">
                                             <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
@@ -245,7 +247,7 @@
                     Ad ea esse ex inventore repudiandae, suscipit!</p>
             </div>
 
-            <section id="films" class="films-grid">
+            <section id="films" class="films-grid owl-carousel">
                 <div class="films-grid__item">
                     <div class="films-grid__inner">
                         <div class="films-grid__poster">
@@ -1656,6 +1658,28 @@
         <button type="submit">Заказать</button>
     </form> -->
 
+    <script src="js/films.js"></script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    
+    <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayHoverPause:true,
+    nav:true,
+    responsive:{
+        600:{
+            items:2
+        },
+        768:{
+            items:3
+        }
+    }
+})
+    </script>
 </body>
 
 </html>
