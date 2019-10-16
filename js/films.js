@@ -1,52 +1,48 @@
-const genre_1 = 'фантастика';
-const genre_2 = 'приключения';
-const genre_3 = 'боевик';
-const genre_4 = 'фэнтези';
-const genre_5 = 'комедия';
-const genre_6 = 'драма';
-const genre_7 = 'мультфильм'; 
 
-let start_film_1 = '10:00';
-let start_film_2 = '12:00';
-let start_film_3 = '14:00';
-let start_film_4 = '16:00';
+let genres = ['фантастика', 'приключения', 
+'боевик', 'фэнтези', 'комедия', 'драма', 'мультфильм'];
 
-let name_film_1 = 'Человек-паук';
-let name_film_2 = 'Собачья жизнь 2';
-let name_film_3 = 'История игрушек 4';
-let name_film_4 = 'Люди в черном: Интернэшнл';
+let films = [
+    ['10:00', 'Человек-паук', genres[0] + ', ' + genres[1] + ', ' + genres[2]],
+    ['12:00', 'Собачья жизнь 2', genres[3] + ', ' + genres[5] + ', ' + genres[4]],
+    ['14:00', 'История игрушек 4', genres[6] + ', ' + genres[1] + ', ' + genres[4]],
+    ['16:00', 'Люди в черном: Интернэшнл', genres[3] + ', ' + genres[2] + ', ' + genres[1]],
+]
 
-let genre_film_1 = genre_1 + ', ' + genre_2 + ', ' + genre_3;
-let genre_film_2 = genre_4 + ', ' + genre_5 + ', ' + genre_6;
-let genre_film_3 = genre_7 + ', ' + genre_4 + ', ' + genre_5;
-let genre_film_4 = genre_1 + ', ' + genre_3 + ', ' + genre_5;
 
-let element_start_film_1 = document.getElementById('start_film_1');
-let element_start_film_2 = document.getElementById('start_film_2');
-let element_start_film_3 = document.getElementById('start_film_3');
-let element_start_film_4 = document.getElementById('start_film_4');
 
-let element_name_film_1 = document.getElementById('name_film_1');
-let element_name_film_2 = document.getElementById('name_film_2');
-let element_name_film_3 = document.getElementById('name_film_3');
-let element_name_film_4 = document.getElementById('name_film_4');
+const elBody = document.getElementById('tableBody');
+for (var i=0; i<films.length; i++) {
+    
+    const elRow = document.createElement('tr')
+    const start = document.createElement('td')
+    start.innerText = films[i][0]
 
-let element_genre_film_1 = document.getElementById('genre_film_1');
-let element_genre_film_2 = document.getElementById('genre_film_2');
-let element_genre_film_3 = document.getElementById('genre_film_3');
-let element_genre_film_4 = document.getElementById('genre_film_4');
+    const link = document.createElement('a')
+    link.href = 'https://www.kinopoisk.ru/film/chelovek-pauk-2002-838/'
+    link.title = 'Кинопоиск'
+    link.target= '_blank'
+    link.appendChild(document.createTextNode(films[i][1]))
 
-element_start_film_1.innerHTML = start_film_1;
-element_start_film_2.innerHTML = start_film_2;
-element_start_film_3.innerHTML = start_film_3;
-element_start_film_4.innerHTML = start_film_4;
+    const name = document.createElement('td')
+    const genre = document.createElement('td')
+    genre.innerText = films [i][2]
 
-element_name_film_1.innerHTML = name_film_1;
-element_name_film_2.innerHTML = name_film_2;
-element_name_film_3.innerHTML = name_film_3;
-element_name_film_4.innerHTML = name_film_4;
+    const plus = document.createElement('td')
+    const container = document.createElement('div')
+    
+    plus.appendChild(container)
+    name.appendChild(link)
+    elRow.appendChild(start)
+    elRow.appendChild(name)
+    elRow.appendChild(genre)
+    elRow.appendChild(plus)
+    elBody.appendChild(elRow)
+    start.classList.add('col1');
+    name.classList.add('col2');
+    genre.classList.add('col3')
+    container.classList.add('svgImage')
+    container.classList.add('col4')
+    
 
-element_genre_film_1.innerHTML = genre_film_1;
-element_genre_film_2.innerHTML = genre_film_2;
-element_genre_film_3.innerHTML = genre_film_3;
-element_genre_film_4.innerHTML = genre_film_4;
+}
