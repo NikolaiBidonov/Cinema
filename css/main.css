@@ -73,6 +73,10 @@ li:hover {
     font-size: .7rem;
 }
 
+input {
+    border-radius: .3rem;
+}
+
 /* \Общие стили */
 
 /* Первый экран */
@@ -438,7 +442,78 @@ li:hover {
     padding-top: 2.1rem;
 }
 
+#tableBody tr:hover td,
+#tableBody tr:hover a {
+    color: #a3cc40;
+    cursor: pointer;
+}
+
 /* \Таблица */
+
+/* Форма заказа */
+
+#orderFormWrap {
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    padding-top: 6rem;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#orderForm {
+    background: #fff;
+    margin: 0 auto;
+    width: 30rem;
+    position: relative;
+    border-radius: 1rem; 
+    padding: 2.6rem 0;   
+}
+
+#thanksForOrderWrap {
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    padding-top: 10rem;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#thanksForOrder {
+    background: #fff;
+    margin: 0 auto;
+    width: 30rem;
+    position: relative;
+    border-radius: 1rem; 
+    padding: 2.6rem 0; 
+    text-align: center;
+}
+
+#closeButton {
+    font-weight: .7rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.order-atribute {
+    padding: .3rem;
+    font-size: 1rem;
+}
+
+.film-order__button {
+    padding-top: 1.2rem;
+    text-align: center;
+}
+/* \Форма заказа */
+
 
 /* Блок подарок */
 
@@ -514,6 +589,7 @@ li:hover {
     border-radius: .75rem;
     padding: .9rem 1.6rem;
     border: 0;
+    cursor: pointer;
 }
 
 /* \Блок подарок */

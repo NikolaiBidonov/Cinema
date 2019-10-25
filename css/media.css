@@ -255,6 +255,15 @@
     .welcome__head {
         font-size: 1.9rem;
     }
+    .advantage-block {
+        display: flex;
+        padding-top: 4rem;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .advantage {
+        width: 100%;
+    }
     .img-screen {
         position: static;
     }

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
 </head>
 
 <body>
@@ -1608,7 +1610,58 @@
             <p>Hope we see you at the event!<br>All Rights Reserved. Envato Bangladesh © 2015</p>
         </div>
     </footer>
+    
+    <div id="orderFormWrap">
+        
+        <form id="orderForm">
+            <div id="closeButton">X</div>
+            <div class="order-atribute">
+                <span>Начало сеанса:</span>
+                <span id="orderFilmStart"></span>
+            </div>
+            <div class="order-atribute">
+                <span>Название фильма:</span>
+                <span id="orderFilmName"></span>
+            </div>
+            <div class="order-atribute">
+                <span>Жанр:</span>
+                <span id="orderFilmGenre"></span>
+            </div>
+            <div class="order-atribute">
+                <span>Стоимость билета:</span>
+                <span id="orderFilmPrice"></span>
+            </div>
+            <div class="order-atribute">
+                <span>Количество билетов:</span>
+                <input type="number" name="countTicket" value="1" min="1" max="10" id="orderCountTicket">
+            </div>
+            <div class="order-atribute">
+                <span>Сумма заказа:</span>
+                <span id="orderFilmTotalPrice"></span>
+            </div>
+            <div class="order-atribute">
+                <span>Имя:</span>
+                <input type="text" name="clientName" required id="orderClientName">
+            </div>
+            <div class="order-atribute">
+                <span>Номер телефона:</span>
+                <input type="tel" maxlength="11" name="clientPhone" required pattern="[0-9]{11}" id="orderClientPhone">  
+            </div>
+            <div class="film-order__button">
+                <button class="button" id="orderFilmButton">Заказать билет</button>
+            </div>
+        </form>
+    </div>
 
+    <div id="thanksForOrderWrap">
+        <div id="thanksForOrder">
+            Спасибо за заказ! Скоро мы с Вами свяжемся
+            <div class="film-order__button">
+                <button class="button" id="thanksForOrderClose">Закрыть</button>
+            </div>
+        </div>
+        
+    </div>
 
     <!-- Форма данных
     <form action="order.php" style="width: 300px;">
@@ -1663,12 +1716,14 @@
         <button type="submit">Заказать</button>
     </form> -->
 
-    <script src="js/films.js"></script>
-
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     
-    <script>
+
+    <script type="text/babel" src="js/films.js"></script>
+
+    <script type="text/babel" src="js/jquery-3.4.1.js"></script>
+    <script type="text/babel" src="js/owl.carousel.min.js"></script>
+    
+    <script type="text/babel">
     $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
