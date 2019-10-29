@@ -24,6 +24,7 @@ body {
     overflow-x: hidden;
     min-width: 320px;
     -webkit-text-size-adjust: 100%;
+    user-select: none;
 }
 
 html {
@@ -400,6 +401,7 @@ input {
     text-align: center;
     vertical-align: top;
     width: 1.65rem;
+    cursor: pointer;
 }
 
 .col4 svg {
@@ -442,10 +444,8 @@ input {
     padding-top: 2.1rem;
 }
 
-#tableBody tr:hover td,
-#tableBody tr:hover a {
-    color: #a3cc40;
-    cursor: pointer;
+.plus-icon path:hover {
+    fill: #a3cc40;
 }
 
 /* \Таблица */
