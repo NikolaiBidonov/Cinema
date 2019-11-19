@@ -512,6 +512,41 @@ input {
     padding-top: 1.2rem;
     text-align: center;
 }
+
+.seats {
+    display: flex;
+    padding: 1rem;
+}
+
+.seats-element {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #000;
+    border-radius: .3rem;
+    text-align: center;
+    margin-left: .5rem;
+    cursor: pointer;
+    line-height: 1.8rem;
+}
+
+.seats-available {
+    background-color: #a3cc40;
+}
+
+
+
+.seats-not-available {
+    background-color: #ffa500;
+}
+
+.chosen-place {
+    background: #609e29;
+}
+
+.seats-hover {
+    background-color: #4b4d4f;
+    transition: .2s;
+}
 /* \Форма заказа */
 
 
@@ -592,6 +627,11 @@ input {
     cursor: pointer;
 }
 
+.button:hover {
+    background: #80b83d;
+    transition: .2s;
+}
+
 /* \Блок подарок */
 
 /* Сетка с фильмами */
@@ -635,6 +675,8 @@ input {
 
 .films-grid__poster {
     height: 14.74rem;
+    border-radius: .55rem;
+    overflow: hidden;
 }
 
 .films-grid__poster img {

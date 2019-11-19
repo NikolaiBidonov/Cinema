@@ -96,15 +96,21 @@
   .owl-nav {
     text-align: center;
   }
-  button.owl-prev {
-    font-size: 3rem !important;
+  button.owl-prev span{
+    font-size: 3.6rem !important;
     color: #a3cc40 !important;
     margin: 0 1rem;
+    position: absolute;
+    top: 5.45rem;
+    left: -.8rem;
   }
-  button.owl-next {
-    font-size: 3rem !important;
+  button.owl-next span{
+    font-size: 3.6rem !important;
     color: #a3cc40 !important;
     margin: 0 1rem;
+    position: absolute;
+    top: 5.45rem;
+    right: -.8rem;
   }
 
 
