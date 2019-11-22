@@ -5,15 +5,15 @@
     <title>Кино в Иннополисе</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shotrcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
 
 </head>
-
 <body>
     <div class="first-screen__background">
         <div class="container">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
         <div class="first-screen__city">
-            <p><span class="city-text">Ваш город: </span><a href="#">Москва</a>
+            <p><span class="city-text">Ваш город: </span><a id="city-name" href="#">-Не определен-</a>
             </p>
         </div>
 
@@ -466,33 +466,16 @@
 
         <button type="submit">Заказать</button>
     </form> -->
-
-    
     <script type="text/babel" src="js/jquery-3.4.1.js"></script>
-
     <script type="text/babel" src="js/films.js"></script>
     <script type="text/babel" src="js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel" src="js/navigation.js"></script>
-    <script type="text/babel">
-    $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayHoverPause:true,
-    nav:true,
-    responsive:{
-        400:{
-            items:2
-        },
-        600:{
-            items:2
-        },
-        768:{
-            items:3
-        }
-    }
-})
-    </script>
+    <script type="text/babel" src="js/owl.js"></script>
+    <script type="text/babel" src="js/ajax.js"></script>
+    
+
+    
 </body>
 
 </html>
