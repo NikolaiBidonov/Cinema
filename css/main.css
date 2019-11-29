@@ -167,6 +167,57 @@ input {
 
 /* \Первый экран */
 
+
+
+.city-modal {
+    display: block;
+    opacity: 0;
+    position: fixed;
+    top: 0rem;
+    right: 6rem;
+    width: 22rem;
+    background: #fff;
+    text-align: center;
+    border-radius: 0.4rem;
+    padding: 1rem 0;
+}
+
+.change-city-modal {
+    display: block;
+    position: fixed;
+    top: 5rem;
+    right: -26rem;
+    width: 26rem;
+    background: #fff;
+    text-align: center;
+    border-radius: .4rem;
+    padding: 1rem 0;
+}
+
+.change-city-modal ul {
+    padding: 0;
+}
+
+.change-city-modal li {
+    display: block;
+    cursor: pointer;
+}
+
+#inputCity {
+    margin: .2rem;
+}
+
+#cityYes,
+#cityNo {
+    font-size: .9rem;
+    color: #fff;
+    background: #a3cc40;
+    border-radius: .75rem;
+    padding: .9rem 1.6rem;
+    border: 0;
+    cursor: pointer;
+}
+
 /* Второй экран */
 
 .second-screen {
