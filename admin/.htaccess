@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Thats protected Area!"
+AuthUserFile C:\xampp\htdocs\cinema.local\admin\.htpasswd
+Require valid-user

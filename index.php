@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    
+
 
 </head>
+
 <body>
     <div class="first-screen__background">
         <div class="container">
@@ -30,194 +31,164 @@
                         <nav class="navigation">
                             <ul>
                                 <li><a class="change-color" href="#order" title="Заказать билет">Заказать билет</a></li>
-                                <li><a class="change-color" href="#advantages" title="Преимущества">Преимущества</a></li>
+                                <li><a class="change-color" href="#advantages" title="Преимущества">Преимущества</a>
+                                </li>
                                 <li><a class="change-color" href="#films" title="Фильмы">Фильмы</a></li>
                                 <li><a class="change-color" href="#contacts" title="Контакты">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-        <div class="first-screen__city">
-            <p><span class="city-text">Ваш город: </span><a id="city-name" href="#">-Не определен-</a>
-            </p>
-        </div>
+                <div class="first-screen__city">
+                    <p><span class="city-text">Ваш город: </span><a id="city-name" href="#">-Не определен-</a>
+                    </p>
+                </div>
 
-        </header>
-    
-    <main>
+            </header>
 
-        <div class="first-screen__main">
-            <h1 class="first-screen__main-row1">Закажите билет в кино</h1>
-            <h2 class="first-screen__main-row2">Всем покупателям подарок!</h2>
-        </div>
+            <main>
+
+                <div class="first-screen__main">
+                    <h1 class="first-screen__main-row1">Закажите билет в кино</h1>
+                    <h2 class="first-screen__main-row2">Всем покупателям подарок!</h2>
+                </div>
         </div>
     </div>
 
-        <section class="container second-screen">
-            <div class="welcome">
-                <h2 class="welcome__head">Добро пожаловать!</h2>
-                <p class="simple-text welcome__text">Cumque dolorem eum harum laudantium libero molestias saepe<br>
-                    soluta?
-                    Facere minima optio perferendis quibusdam quis<br> reprehenderit, saepe!
-                    Debitis enim optio saepe voluptatibus.</p>
-                <p class="simple-text welcome__text2">Cumque dolorem eum harum laudantium libero molestias saepe<br>
-                    soluta?
-                    Facere minima optio perferendis quibusdam quis<br> reprehenderit, saepe!
-                    Debitis enim optio saepe voluptatibus.</p>
+    <section class="container second-screen">
+        <div class="welcome">
+            <h2 class="welcome__head">Добро пожаловать!</h2>
+            <p class="simple-text welcome__text">Cumque dolorem eum harum laudantium libero molestias saepe<br>
+                soluta?
+                Facere minima optio perferendis quibusdam quis<br> reprehenderit, saepe!
+                Debitis enim optio saepe voluptatibus.</p>
+            <p class="simple-text welcome__text2">Cumque dolorem eum harum laudantium libero molestias saepe<br>
+                soluta?
+                Facere minima optio perferendis quibusdam quis<br> reprehenderit, saepe!
+                Debitis enim optio saepe voluptatibus.</p>
+        </div>
+
+        <div id="advantages" class="why-us">
+            <h2>Почему мы?</h2>
+        </div>
+
+        <div class="advantage-block">
+
+            <div class="advantage">
+                <div class="advantage__img-wrap scale">
+                    <img class="img-screen" src="images/b2_icon_1.jpg" alt="Экраны">
+                </div>
+                <h3 class="advantage-head1">Большие экраны</h3>
+                <p class="simple-text advantage-text1">Meet the Community you’ve always talked with,<br>
+                    in real life! This meetup will be all about authors<br> engaging each other with interesting<br>
+                    coversation</p>
             </div>
 
-            <div id="advantages" class="why-us">
-                <h2>Почему мы?</h2>
+            <div class="advantage">
+                <div class="advantage__img-wrap scale">
+                    <img class="img-sound" src="images/b2_icon_2.jpg" alt="Звук">
+                </div>
+                <h3 class="advantage-head2">Объемный звук</h3>
+                <p class="simple-text advantage-text2">In this meetup you will get to know the<br> marketplaces
+                    better, because
+                    that’s why were all<br> here for right? Learn a few tips and tricks from<br>
+                    experienced authors from all over the country.</p>
             </div>
 
-            <div class="advantage-block">
-
-                <div class="advantage">
-                    <div class="advantage__img-wrap scale">
-                        <img class="img-screen" src="images/b2_icon_1.jpg" alt="Экраны">
-                    </div>
-                    <h3 class="advantage-head1">Большие экраны</h3>
-                    <p class="simple-text advantage-text1">Meet the Community you’ve always talked with,<br>
-                        in real life! This meetup will be all about authors<br> engaging each other with interesting<br>
-                        coversation</p>
+            <div class="advantage">
+                <div class="advantage__img-wrap scale">
+                    <img class="img-chair" src="images/b2_icon_3.jpg" alt="Кресла">
                 </div>
-
-                <div class="advantage">
-                    <div class="advantage__img-wrap scale">
-                        <img class="img-sound" src="images/b2_icon_2.jpg" alt="Звук">
-                    </div>
-                    <h3 class="advantage-head2">Объемный звук</h3>
-                    <p class="simple-text advantage-text2">In this meetup you will get to know the<br> marketplaces
-                        better, because
-                        that’s why were all<br> here for right? Learn a few tips and tricks from<br>
-                        experienced authors from all over the country.</p>
-                </div>
-
-                <div class="advantage">
-                    <div class="advantage__img-wrap scale">
-                        <img class="img-chair" src="images/b2_icon_3.jpg" alt="Кресла">
-                    </div>
-                    <h3 class="advantage-head3">Удобные кресла</h3>
-                    <p class="simple-text advantage-text3">Gather round fellow authors!<br> Hear the stories of success
-                        from your
-                        favorite<br> authors and learn how they we able to tackle<br> their
-                        problems and become successful.</p>
-                </div>
-                <!-- Дополнительное условие из 3.3 СА - еще один ряд преимуществ
-                <div class="advantage">
-                    <div class="advantage__img-wrap scale">
-                        <img class="img-screen" src="images/b2_icon_1.jpg" alt="Экраны">
-                    </div>
-                    <h3 class="advantage-head1">Большие экраны</h3>
-                    <p class="simple-text advantage-text1">Meet the Community you’ve always talked with,<br>
-                        in real life! This meetup will be all about authors<br> engaging each other with interesting<br>
-                        coversation</p>
-                </div>
-
-                <div class="advantage">
-                    <div class="advantage__img-wrap scale">
-                        <img class="img-sound" src="images/b2_icon_2.jpg" alt="Звук">
-                    </div>
-                    <h3 class="advantage-head2">Объемный звук</h3>
-                    <p class="simple-text advantage-text2">In this meetup you will get to know the<br> marketplaces better, because
-                        that’s why were all<br> here for right? Learn a few tips and tricks from<br>
-                        experienced authors from all over the country.</p>
-                </div>
-
-                <div class="advantage">
-                    <div class="advantage__img-wrap scale">
-                        <img class="img-chair" src="images/b2_icon_3.jpg" alt="Кресла">
-                    </div>
-                    <h3 class="advantage-head3">Удобные кресла</h3>
-                    <p class="simple-text advantage-text3">Gather round fellow authors!<br> Hear the stories of success from your
-                        favorite<br> authors and learn how they we able to tackle<br> their
-                        problems and become successful.</p>
-                </div>
-                -->
+                <h3 class="advantage-head3">Удобные кресла</h3>
+                <p class="simple-text advantage-text3">Gather round fellow authors!<br> Hear the stories of success
+                    from your
+                    favorite<br> authors and learn how they we able to tackle<br> their
+                    problems and become successful.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="container">
-            <div class="movie-list">
-                <h2 id="order" class="movie-list__header">Выберите фильм</h2>
-                <div class="container">
-                    <div class="movie-list__table-wrap">
-                        <table class="movie-list__table">
-                            <thead>
-                                <tr>
-                                    <th class="movie-list__head1"><a href="#">Начало сеанса</a></th>
-                                    <th class="movie-list__head2"><a href="#">Название фильма</a></th>
-                                    <th class="movie-list__head3"><a href="#">Жанр</a></th>
-                                    <th class="movie-list__head4"></th>
-                                </tr>
-                            </thead>
-                            <tbody id="tableBody">
-                            </tbody>
-                        </table>
-                        <template id="svgPlus"><svg class="plus-icon" xmlns="http://www.w3.org/2000/svg"
+    <section class="container">
+        <div class="movie-list">
+            <h2 id="order" class="movie-list__header">Выберите фильм</h2>
+            <div class="container">
+                <div class="movie-list__table-wrap">
+                    <table class="movie-list__table">
+                        <thead>
+                            <tr>
+                                <th class="movie-list__head1"><a href="#">Начало сеанса</a></th>
+                                <th class="movie-list__head2"><a href="#">Название фильма</a></th>
+                                <th class="movie-list__head3"><a href="#">Жанр</a></th>
+                                <th class="movie-list__head4"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        </tbody>
+                    </table>
+                    <template id="svgPlus"><svg class="plus-icon" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 33 33">
                             <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
                                 d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
                         </svg></template>
-                    </div>
-                    <div class="simple-text movie-list__text">
-                        <p>Please keep in mind that the timings may differ according
-                            to the flow of the event. The even is actually day long and
-                            we do plan to finish<br> it within our set time but it
-                            doesn’t have to be, if we all agree to hangour for some
-                            time more, what harm could it do? :)</p>
-                    </div>
+                </div>
+                <div class="simple-text movie-list__text">
+                    <p>Please keep in mind that the timings may differ according
+                        to the flow of the event. The even is actually day long and
+                        we do plan to finish<br> it within our set time but it
+                        doesn’t have to be, if we all agree to hangour for some
+                        time more, what harm could it do? :)</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <div class="present-block__background">
+        <section class="container">
+            <div class="present-block">
+                <div class="present-block__img">
+                    <img src="images/podarok.png" alt="Подарок">
+                </div>
+                <h2 class="present-block__head">Подарок каждому!</h2>
+                <div class="simple-text present-block__text">
+                    <p>Are you an Elite author in the Envato Marketplaces? If so we are proud of you!
+                        We want to give our thanks in<br> achieving great success in the marketplace and we want
+                        to make known to the people of our country that<br> you are amazing! Our
+                        Elite gifting program includes giving you special merchandize from our community
+                        and<br> also promote your works in our community.</p>
+                    <p>All you have to do is contact us by clicking the button here and then its just
+                        going to the event, saying<br> something motivational and taking that swag while
+                        looking amazing infront of thousands of other<br> community members.</p>
+                    <p>*Be advised, we will only give you Elite thank you swag for each level of elite
+                        you cross.<br>That means if you do not cross to the next elite level before the
+                        next event, you cannot claim your prizes.</p>
+                </div>
+                <div class="present-block__button">
+                    <button id="getPresent" class="button"><a href="#" title="Получить подарок" alt="Получить подарок">Получить
+                            подарок</a></button>
+                </div>
+            </div>
+
         </section>
+    </div>
+    <div class="container">
+        <div class="films-grid__head">
+            <h2>Фильмы</h2>
+        </div>
+        <div class="simple-text films-grid__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi,
+                commodi eius ipsum,<br> laudantium neque nihil omnis perferendis sed sequi tempore!
+                Ad ea esse ex inventore repudiandae, suscipit!</p>
+        </div>
 
-        <div class="present-block__background">
-            <section class="container">
-                <div class="present-block">
-                    <div class="present-block__img">
-                        <img src="images/podarok.png" alt="Подарок">
-                    </div>
-                    <h2 class="present-block__head">Подарок каждому!</h2>
-                    <div class="simple-text present-block__text">
-                        <p>Are you an Elite author in the Envato Marketplaces? If so we are proud of you!
-                            We want to give our thanks in<br> achieving great success in the marketplace and we want
-                            to make known to the people of our country that<br> you are amazing! Our
-                            Elite gifting program includes giving you special merchandize from our community
-                            and<br> also promote your works in our community.</p>
-                        <p>All you have to do is contact us by clicking the button here and then its just
-                            going to the event, saying<br> something motivational and taking that swag while
-                            looking amazing infront of thousands of other<br> community members.</p>
-                        <p>*Be advised, we will only give you Elite thank you swag for each level of elite
-                            you cross.<br>That means if you do not cross to the next elite level before the
-                            next event, you cannot claim your prizes.</p>
-                    </div>
-                    <div class="present-block__button">
-                        <button class="button"><a href="#" title="Получить подарок" alt="Получить подарок">Получить
-                                подарок</a></button>
-                    </div>
-                </div>
-
-            </section>
-        </div>
-        <div class="container">
-            <div class="films-grid__head">
-                <h2>Фильмы</h2>
-            </div>
-            <div class="simple-text films-grid__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi,
-                    commodi eius ipsum,<br> laudantium neque nihil omnis perferendis sed sequi tempore!
-                    Ad ea esse ex inventore repudiandae, suscipit!</p>
-            </div>
-
-            <section id="films" class="films-grid owl-carousel">
-            </section>
-        </div>
-        <div class="map">
-            <script type="text/javascript" charset="utf-8" async
-                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae0b8bb26d8161ee25b4d39dae4dd084e125fd5f1087a7f44254d5855796e21f7&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true">
-            </script>
-        </div>
-        </div>
+        <section id="films" class="films-grid owl-carousel">
+        </section>
+    </div>
+    <div class="map">
+        <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae0b8bb26d8161ee25b4d39dae4dd084e125fd5f1087a7f44254d5855796e21f7&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true">
+        </script>
+    </div>
+    </div>
 
     </main>
 
@@ -362,9 +333,9 @@
             <p>Hope we see you at the event!<br>All Rights Reserved. Envato Bangladesh © 2015</p>
         </div>
     </footer>
-    
+
     <div id="orderFormWrap">
-        
+
         <form id="orderForm">
             <div id="closeButton">X</div>
             <div class="order-atribute">
@@ -394,7 +365,7 @@
             </div>
             <div id="numberInput" class="order-atribute">
                 <span>Номер телефона:</span>
-                <input type="tel" maxlength="11" name="clientPhone" required pattern="[0-9]{11}" id="orderClientPhone">  
+                <input type="tel" maxlength="11" name="clientPhone" required pattern="[0-9]{11}" id="orderClientPhone">
             </div>
             <div class="film-order__button">
                 <button type="submit" class="button" id="orderFilmButton">Заказать билет</button>
@@ -402,7 +373,7 @@
         </form>
     </div>
 
-    
+
 
     <div id="thanksForOrderWrap">
         <div id="thanksForOrder">
@@ -410,7 +381,7 @@
             <div class="film-order__button">
                 <button class="button" id="thanksForOrderClose">Закрыть</button>
             </div>
-        </div>   
+        </div>
     </div>
 
     <div class="city-modal" id="cityModal">
@@ -429,68 +400,79 @@
         <div id="result"></div>
     </div>
 
-    <!-- Форма данных
-    <form action="order.php" style="width: 300px;">
+    <div id="presentModal" class="present-modal">
+        
+        <form id="presentForm" enctype="multipart/form-data" method="POST" action="order.php" style="width: 300px;">
+        <div id="closePresent" class="close-present">X</div>
+            <div class="present-atribute">
+                <input type="text" name="name" class="input-form" placeholder="Имя" value="<?php echo isset($_COOKIE['name']) ? $_COOKIE['name'] : "" ?>" aria-label="Введите имя" required>
+                <?php if (isset($_GET['error']) && $_GET['error']) { ?>
+                <p style="font-size:12px; color:red;"><?php echo $_GET['error'] ?> </p>
+                <?php } ?>
+            </div>
 
-        <div>
-            <input type="text" name="client_name" placeholder="Имя" aria-label="Введите имя" required>
-        </div>
+            <div class="present-atribute">
+                <input type="email" name="email" class="input-form" placeholder="Ваш e-mail" value="<?php echo isset($_COOKIE['email']) ? $_COOKIE['email'] : "" ?>" aria-label="Введите e-mail" required>
+                <?php if (isset($_GET['error']) && $_GET['error']) { ?>
+                <p style="font-size:12px; color:red;"><?php echo $_GET['error'] ?> </p>
+                <?php } ?>
+                <?php if (isset($_GET['error_email']) && $_GET['error_email']) { ?>
+                <p style="font-size:12px; color:red;"><?php echo $_GET['error_email'] ?> </p>
+                <?php } ?>
+            </div>
 
-        <div>
-            <input type="email" name="client_email" placeholder="Ваш e-mail" aria-label="Введите e-mail" required>
-        </div>
+            <div class="present-atribute">
+                <input type="text" name="phone" class="input-form" placeholder="Ваш номер телефона" value="<?php echo isset($_COOKIE['phone']) ? $_COOKIE['phone'] : "" ?>" aria-label="Введите e-mail" required>
+                <?php if (isset($_GET['error']) && $_GET['error']) { ?>
+                <p style="font-size:12px; color:red;"><?php echo $_GET['error'] ?> </p>
+                <?php } ?>
+            </div>
 
-        <div>
-            <select aria-label="Выберите место" name="place" id="" required>
-                <option value="" disabled selected>Выберите место</option>
-                <option value="1">Место 1</option>
-                <option value="2">Место 2</option>
-                <option value="3">Место 3</option>
-                <option value="4">Место 4</option>
-                <option value="5">Место 5</option>
-                <option value="6">Место 6</option>
-                <option value="7">Место 7</option>
-                <option value="8">Место 8</option>
-                <option value="9">Место 9</option>
-                <option value="10">Место 10</option>
-            </select>
-        </div>
+            <div class="present-atribute">
+                <input id="radio1" type="radio" required value="Поход в трогательный зоопарк" name="present">
+                <label for="radio1">Поход в трогательный зоопарк</label>
+            </div>
 
-        <div>
-            <label for="first">Выбор 1</label>
-            <input id="first" type="radio" name="some">
-        </div>
+            <div class="present-atribute">
+                <input id="radio2" type="radio" required value="Бесплатный поп-корн" name="present">
+                <label for="radio2">Бесплатный поп-корн</label>
+                
+            </div>
 
-        <div>
-            <label for="second">Выбор 2</label>
-            <input id="second" type="radio" name="some">
-        </div>
+            <div class="present-atribute">
+                <input id="radio3" type="radio" required value="Бесплатный напиток" name="present">
+                <label for="radio3">Бесплатный напиток</label>
+                
+            </div>
 
-        <div>
-            <textarea placeholder="Ваш комментарий" aria-label="Введите комментарий"></textarea>
-        </div>
+            <div class="present-atribute">
+                <textarea placeholder="Ваш комментарий" name="comment" class="textarea-form" aria-label="Введите комментарий"></textarea>
+            </div>
 
-        <div>
-            <input id="checkbox" type="checkbox" required>
-            <label for="checkbox">Я согласен на обработку персональных данных</label>
-        </div>
+            <div class="present-atribute">
+                <input type="hidden" class="input-checkbox" name="agree" value="off">
+                <input id="checkbox" type="checkbox" name="agree" required>
+                <label for="checkbox">Я согласен на обработку персональных данных</label>
+            </div>
 
-        <div>
-            <input type="file" name="coupon" aria-label="Выберите файл">
-        </div>
+            <div class="order-atribute">
+                <input type="file" multiple accept="image/jpeg,image/png,image/gif" name="file" aria-label="Выберите файл">
+            </div>
 
-        <button type="submit">Заказать</button>
-    </form> -->
+            <button class="button-present" type="submit">Отправить</button>
+        </form>
+    </div>
+
     <script type="text/babel" src="js/jquery-3.4.1.js"></script>
     <script type="text/babel" src="js/films.js"></script>
     <script type="text/babel" src="js/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel" src="js/navigation.js"></script>
     <script type="text/babel" src="js/owl.js"></script>
-    <script type="text/babel" src="js/ajax.js"></script>
-    
+    <script type="text/babel" src="js/ajax.js?1"></script>
+    <script type="text/babel" src="js/present.js"></script>
 
-    
+
 </body>
 
 </html>
