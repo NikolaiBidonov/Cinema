@@ -524,7 +524,9 @@ input {
     padding: 2.6rem 0;   
 }
 
-#thanksForOrderWrap {
+#thanksForOrderWrap,
+#presentModalErrorWrap,
+#presentModalSuccessWrap {
     background: rgba(0, 0, 0, .5);
     position: fixed;
     height: 100vh;
@@ -536,7 +538,9 @@ input {
     display: none;
 }
 
-#thanksForOrder {
+#thanksForOrder,
+.presentModalError,
+.presentModalSuccess {
     background: #fff;
     margin: 0 auto;
     width: 30rem;
@@ -552,6 +556,17 @@ input {
     top: 1rem;
     right: 1rem;
     cursor: pointer;
+}
+
+.ajax-loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: url(../images/spinner-test4.gif) no-repeat center;
+
 }
 
 .order-atribute {
@@ -681,6 +696,74 @@ input {
 .button:hover {
     background: #80b83d;
     transition: .2s;
+}
+
+#presentForm {
+    background: #fff;
+    margin: 0 auto;
+    width: 30rem;
+    position: relative;
+    border-radius: 1rem; 
+    padding: 2.6rem 0;   
+}
+
+.present-modal {
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    padding-top: 6rem;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.present-atribute {
+    padding: .3rem .6rem;
+    font-size: .9rem;
+}
+
+.textarea-form {
+    width: 90%; 
+    height: 150px;
+    resize: none;
+}
+
+.input-form {
+    width: 90%;
+}
+
+.button-present {
+    font-size: .9rem;
+    color: #fff;
+    background: #a3cc40;
+    border-radius: .75rem;
+    padding: .9rem 1.6rem;
+    border: 0;
+    margin-left: .2rem;
+    cursor: pointer;
+}
+
+.input-checkbox {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+}
+
+.close-present {
+    font-size: .7rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.input-required {
+    color: #ff0000;
+    font-size: .8rem;
 }
 
 /* \Блок подарок */
